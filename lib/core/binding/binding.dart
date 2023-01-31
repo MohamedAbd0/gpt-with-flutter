@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
 
-import '../controllers/chat_text_controller.dart';
+import '../controllers/gpt_controller.dart';
 
 class Binding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => ChatTextController(), fenix: true);
+    Get.lazyPut(() => GPTController(), fenix: true);
   }
 }

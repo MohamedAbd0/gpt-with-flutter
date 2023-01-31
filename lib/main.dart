@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:gpt/view/screen/chat_text/chat_image_view.dart';
 import 'package:gpt/view/screen/chat_text/chat_text_view.dart';
 import 'core/binding/binding.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ChatTextView(),
+      home: const ChatImageView(),
     );
   }
 }

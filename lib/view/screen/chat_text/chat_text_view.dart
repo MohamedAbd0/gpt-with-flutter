@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../core/controllers/chat_text_controller.dart';
+import '../../../core/controllers/gpt_controller.dart';
 import '../../widgets/search_text_field_widget.dart';
 import '../../widgets/text_card.dart';
 
@@ -10,7 +10,7 @@ class ChatTextView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<ChatTextController>(
+    return GetBuilder<GPTController>(
       builder: (controller){
         return Scaffold(
           appBar: AppBar(
@@ -31,7 +31,7 @@ class ChatTextView extends StatelessWidget {
               child: ListView.builder(
                 itemCount: controller.messages.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return TextCardWidget ( textCompletionData: controller.messages[index] );
+                  return TextCardWidget (textCompletionData: controller.messages[index] );
                 },
               ),
             ),

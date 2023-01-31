@@ -22,9 +22,10 @@ class TextCompletionData{
   final String text;
   final num index;
   final String finishReason;
-  final bool isSendMassage ;
+  final bool isSendMassage;
+  final bool isImage;
 
-  TextCompletionData({required this.text,required this.index,required this.finishReason,this.isSendMassage = false});
+  TextCompletionData({required this.text,required this.index,required this.finishReason,this.isSendMassage = false,this.isImage = false});
 
 
   factory TextCompletionData.fromJson(Map<String,dynamic> json){
@@ -34,6 +35,7 @@ class TextCompletionData{
       index: json['index'],
       finishReason: json['finish_reason'],
       isSendMassage: false,
+      isImage: false,
     );
   }
 }
