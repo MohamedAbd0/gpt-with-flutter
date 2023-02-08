@@ -1,10 +1,4 @@
-# gpt with flutter demo
+# chat GPT with flutter demo
 
-A new Flutter project.
+![](screenshot.png)
 
-## Getting Started
-
-![](readme/Screenshot_1673626621.png)
-
-
-![](readme/untitled.webm)

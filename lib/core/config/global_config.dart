@@ -1,2 +1,3 @@
-const String OPEN_AI_KEY = "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";
+// ignore: constant_identifier_names
+const String OPEN_AI_KEY = "";
 const String baseURL = "https://api.openai.com/v1";

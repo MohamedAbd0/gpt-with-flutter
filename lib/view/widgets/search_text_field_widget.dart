@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class SearchTextFieldWidget extends StatelessWidget {
   final TextEditingController? textEditingController;
   final VoidCallback? onTap;
-  var color;
 
-   SearchTextFieldWidget({
+  const SearchTextFieldWidget({
     Key? key,
-    this.color,
     this.textEditingController,
     this.onTap,
   }) : super(key: key);
@@ -52,8 +49,7 @@ class SearchTextFieldWidget extends StatelessWidget {
                               maxLines: null,
                               decoration: const InputDecoration(
                                   border: InputBorder.none,
-                                  hintText:
-                                      "Open AI waiting your message..."),
+                                  hintText: "Open AI waiting your message..."),
                             ),
                           ),
                         ),
@@ -67,10 +63,11 @@ class SearchTextFieldWidget extends StatelessWidget {
           ),
           const SizedBox(width: 5),
           InkWell(
-            onTap:onTap,
+            onTap: onTap,
             child: Container(
               decoration: BoxDecoration(
-                  color: color, borderRadius: BorderRadius.circular(40)),
+                  color: Colors.green.withOpacity(0.8),
+                  borderRadius: BorderRadius.circular(40)),
               padding: const EdgeInsets.all(10),
               child: const Icon(
                 Icons.send,
